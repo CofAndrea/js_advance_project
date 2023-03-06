@@ -47,6 +47,10 @@ td{
 }
 .desc_div{
  display: grid;
+ font-size: large;
+}
+.tablecontent{
+    font-weight: bold;
 }
 
 @media screen and (max-width: 376px){
