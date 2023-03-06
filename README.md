@@ -8,7 +8,7 @@ A simple java application that allows the user fetch from an API infos about Los
 ## Description.
 
 
-The user can tipe anything into the searchbox but the app will only respond to "los-angeles". once the searchbox has been compiled the user can either press "Enter" or click the search button and data will be displayed. There is also a clear button for the sake of it.
+The user can type anything into the searchbox but the app will only respond to "los-angeles". once the searchbox has been compiled the user can either press "Enter" or click the search button and data will be displayed. There is also a clear button for the sake of it.
 
 
 ## Link.
