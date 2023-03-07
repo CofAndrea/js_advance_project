@@ -6,19 +6,17 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: linear-gradient(135deg, rgb(192, 184, 134) 60%, rgb(208, 129, 19));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.container{
-    position: relative;
+.containerz{
     display: grid;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     padding: 28px 32px;
     overflow: hidden;
-    width: 50%;
     border-radius: 18px;
     font-family: sans-serif;
 }
@@ -37,10 +35,13 @@ body{
     outline: none;
 }
 i{
-    padding-top:8px;
     padding-right: 15px;
     color: #06283D;
     font-size: 28px;
+}
+.data_table{
+    font-weight: bold;
+    width: 600px;
 }
 td{
     padding-left: 20px;
@@ -48,17 +49,62 @@ td{
 .desc_div{
  display: grid;
  font-size: large;
+ width: 600px;
 }
-.tablecontent{
-    font-weight: bold;
+@media screen and (max-width:1025px){
+    body{
+        display: block;
+        align-items: center;
+        justify-self: center;
+    }
+    .containerz{
+        display:grid;
+        justify-content: center;
+    }
 }
 
+
+@media screen and (max-width: 415px){
+    body{
+        align-items: normal;
+        display: flex;
+    }
+    .containerz{
+      border-radius: 0px;
+      width: 415px;
+    }
+    .data_table{
+        width: 400px;
+    }
+    .desc_div{
+        width: 400px;
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 376px){
     body{
-        height: 100vh;
+        align-items: normal;  
+        display: flex;
     }
-    .container{
-        border-radius: 0px;
-        margin-top: 40px;
+    .containerz{
+      border-radius: 0px;
+    }
+    .data_table{
+        width: 300px;
+    }
+    .desc_div{
+        width: 300px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 361px){
+    body{
+        align-items: center;  
+        justify-content: center;
+        display: block;
+    }
+    .containerz{
+      border-radius: 0px;
+      width: 360px;
     }
 }

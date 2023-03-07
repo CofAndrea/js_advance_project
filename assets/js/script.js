@@ -7,10 +7,10 @@ let input=document.getElementById("text_input")
 /* create a function for clearing the result of callApi function */
 function createClearBtn(paragrafo){
 /* create a button that appends to paragrafo which is used as a medium for textElement(see in callApi function) */    
-    let clearbtn=document.createElement("button")
-    clearbtn.type="button"
-    clearbtn.innerText="Clear"
-    clearbtn.id="clear"  
+    let clearbtn=document.createElement("button");
+    clearbtn.type="button";
+    clearbtn.innerText="Clear";
+    clearbtn.id="clear";
     clearbtn.setAttribute("class", "btn btn-outline-danger"); 
 /* write the clear function,removing data_table and desc_div and resetting the value of apiCalled to false  */    
     clearbtn.onclick=function(){
@@ -20,7 +20,7 @@ function createClearBtn(paragrafo){
     }
     paragrafo.appendChild(clearbtn)
 };
-/* create the main function for getting data from the API */
+/* declare two methods for calling the function */
 button.addEventListener("click", function(){
     callApi();
 });
@@ -30,6 +30,7 @@ input.addEventListener("keypress", function(event) {
       document.getElementById("search_input").click();
     }
 });
+/* create the main function for getting data from the API */
 function callApi(){
 /* declare the table variable and create the element table    */ 
     let table=document.createElement("table");
@@ -56,9 +57,8 @@ function callApi(){
                         row.appendChild(names);
                         row.appendChild(scores);
                         table.appendChild(row);
-                })
-                tablecontainer.appendChild(table)
-                table.setAttribute("class", "tablecontent")
+                });
+                tablecontainer.appendChild(table);
                 const textElement = document.createElement('div');
                 tablecontainer.append(textElement);
                 textElement.innerHTML = data.summary;
