@@ -13,7 +13,7 @@ The user can type anything into the searchbox but the app will only respond to "
 
 ## Link.
 
-[https://qlifee.netlify.app/](https://qlifee.netlify.app/)
+[https://qlifecof.netlify.app/](https://qlifecof.netlify.app/)
 
 
 ## Author.
